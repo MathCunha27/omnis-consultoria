@@ -410,6 +410,7 @@ a {
   transition: transform var(--transition), box-shadow var(--transition);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .team-card:hover {
