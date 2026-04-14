@@ -322,3 +322,73 @@ a {
   .sobre__logo-wrap { order: -1; padding: 24px; }
   .sobre__logo { max-width: 240px; margin: 0 auto; }
 }
+
+/* ===== SECTION HEADER ===== */
+.section__header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 64px;
+}
+
+.section__desc {
+  font-size: 18px;
+  color: var(--color-gray-text);
+  margin-top: 16px;
+}
+
+/* ===== SERVIÇOS ===== */
+.servicos {
+  background: var(--color-gray-light);
+}
+
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(43,75,171,0.12);
+}
+
+.service-card__icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-blue);
+  margin-bottom: 20px;
+}
+
+.service-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-card__title {
+  font: var(--font-heading-md);
+  font-size: 17px;
+  color: var(--color-black);
+  margin-bottom: 10px;
+}
+
+.service-card__desc {
+  font-size: 15px;
+  color: var(--color-gray-text);
+  line-height: 1.6;
+}
+
+@media (max-width: 1023px) {
+  .servicos__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .servicos__grid { grid-template-columns: 1fr; }
+}
