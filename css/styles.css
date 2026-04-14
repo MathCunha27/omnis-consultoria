@@ -6,6 +6,7 @@
   --color-gray-light: #F5F7FA;
   --color-gray-text:  #4A5568;
   --color-black:      #0A0D1A;
+  --color-blue-dark:  #243f95;
 
   --font-heading-xl: 700 56px/1.15 'Inter', sans-serif;
   --font-heading-lg: 700 40px/1.2  'Inter', sans-serif;
@@ -231,8 +232,8 @@ a {
 }
 
 .btn--primary:hover {
-  background: #243f95;
-  border-color: #243f95;
+  background: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
 }
 
 /* Responsivo hero */
