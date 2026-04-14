@@ -569,12 +569,12 @@ a {
 }
 
 .footer__logo {
-  height: 36px;
+  height: 56px;
   width: auto;
   object-fit: contain;
   background: var(--color-white);
-  padding: 6px 14px;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
 .footer__copy {
