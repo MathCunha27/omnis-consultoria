@@ -408,6 +408,8 @@ a {
   padding: 36px 28px;
   text-align: center;
   transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .team-card:hover {
@@ -450,6 +452,7 @@ a {
   color: var(--color-gray-text);
   line-height: 1.7;
   margin-bottom: 24px;
+  flex-grow: 1;
 }
 
 .team-card__linkedin {
