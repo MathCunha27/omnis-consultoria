@@ -304,9 +304,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  background: var(--color-gray-light);
-  border-radius: var(--border-radius);
+  padding: 20px;
 }
 
 .sobre__logo {
