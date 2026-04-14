@@ -392,3 +392,102 @@ a {
 @media (max-width: 767px) {
   .servicos__grid { grid-template-columns: 1fr; }
 }
+
+/* ===== EQUIPE ===== */
+.equipe {
+  background: var(--color-white);
+}
+
+.equipe__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.team-card {
+  background: var(--color-gray-light);
+  border-radius: var(--border-radius);
+  padding: 36px 28px;
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.team-card__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-blue));
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.team-card__name {
+  font: var(--font-heading-md);
+  font-size: 18px;
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+
+.team-card__role {
+  display: block;
+  font: var(--font-label);
+  color: var(--color-blue);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.team-card__bio {
+  font-size: 14px;
+  color: var(--color-gray-text);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.team-card__linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  color: var(--color-white);
+  transition: background var(--transition);
+}
+
+.team-card__linkedin:hover {
+  background: var(--color-navy);
+}
+
+.team-card__linkedin svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 1023px) {
+  .equipe__grid { grid-template-columns: repeat(2, 1fr); }
+  .equipe__grid .team-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .equipe__grid { grid-template-columns: 1fr; }
+  .equipe__grid .team-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+}
