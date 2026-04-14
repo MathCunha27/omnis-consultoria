@@ -1,0 +1,8 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Source material (not part of site)
+PHOTO-*.jpg
+*.pptx
+texto.txt
