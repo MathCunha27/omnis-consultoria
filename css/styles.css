@@ -572,7 +572,9 @@ a {
   height: 36px;
   width: auto;
   object-fit: contain;
-  opacity: 0.85;
+  background: var(--color-white);
+  padding: 6px 14px;
+  border-radius: 6px;
 }
 
 .footer__copy {
